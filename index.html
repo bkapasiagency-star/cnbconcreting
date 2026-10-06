@@ -1,0 +1,725 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>CNB Concreting Brisbane</title>
+<meta name="description" content="CNB Concreting: Brisbane concreters for driveways, pool surrounds, exposed aggregate, slabs and commercial work. 5.0 stars on Google. Free quotes across South East Queensland.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Archivo:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GeneralContractor","name":"CNB Concreting Pty Ltd","description":"Residential, commercial and decorative concreting across Brisbane and South East Queensland.","telephone":"+61422153721","foundingDate":"2021","address":{"@type":"PostalAddress","addressLocality":"Stafford Heights","addressRegion":"QLD","postalCode":"4053","addressCountry":"AU"},"areaServed":["Brisbane","Moreton Bay","Ipswich","Logan","Gold Coast","Sunshine Coast"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"17"},"founder":[{"@type":"Person","name":"Chris McCormick"},{"@type":"Person","name":"Bart Baker"}]}
+</script>
+<style>
+/* Layout concept: a dark "wet slab" hero and footer bookend a pale concrete page; copper from the CNB logo is the only accent; speckled exposed aggregate is the recurring texture. */
+:root{
+  color-scheme:light;
+  --ink:#131820; --ink-2:#1C232E; --ink-3:#2A3340;
+  --slab:#E6E5E1; --paper:#F4F3F0; --white:#FFFFFF;
+  --copper:#CB965C; --copper-hi:#E3B580; --copper-deep:#9A6A35;
+  --text:#1B2028; --muted:#5E646D; --muted-dark:#A9B0BA;
+  --line:rgba(19,24,32,.13); --line-dark:rgba(255,255,255,.14);
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --r:14px; --gutter:clamp(16px,4vw,40px); --max:1180px;
+  --agg:none;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.95;margin:0;text-wrap:balance;letter-spacing:.005em}
+h2{font-size:clamp(2.5rem,6.2vw,4.6rem);font-weight:900}
+h3{font-size:1.65rem;font-weight:800;line-height:1}
+p{margin:0}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.sec{padding-block:clamp(64px,9vw,120px)}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-deep);display:flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.dark .eyebrow{color:var(--copper-hi)}
+.lede{color:var(--muted);max-width:58ch;font-size:1.08rem}
+.dark{background:var(--ink);color:#EEF0F3;background-image:var(--agg)}
+.dark .lede{color:var(--muted-dark)}
+.head{display:grid;gap:1rem;margin-bottom:clamp(28px,4vw,52px)}
+.cu{color:var(--copper)}
+:focus-visible{outline:3px solid var(--copper);outline-offset:3px;border-radius:6px}
+
+/* buttons (liquid metal) */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;border:0;cursor:pointer;text-decoration:none;font:700 1rem/1 var(--body);padding:1.05rem 1.5rem;border-radius:999px;transition:transform .15s var(--ease),box-shadow .2s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.42) 47%,rgba(255,255,255,.62) 50%,rgba(255,255,255,.42) 53%,transparent 65%);transform:translateX(-130%);opacity:0;transition:opacity .2s ease}
+.btn:hover::before,.btn:focus-visible::before{opacity:1;animation:metalSweep .85s ease}
+@keyframes metalSweep{from{transform:translateX(-130%)}to{transform:translateX(130%)}}
+.btn::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(0,0,0,.28)}
+.btn-primary{background:linear-gradient(180deg,var(--copper-hi) 0%,var(--copper) 55%,#B98048 100%);color:#1A1208;box-shadow:0 10px 30px -10px rgba(203,150,92,.7)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 36px -10px rgba(203,150,92,.8)}
+.btn-dark{background:linear-gradient(180deg,#2A3340 0%,#161C25 55%,#0C1016 100%);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;box-shadow:inset 0 0 0 1px var(--line-dark)}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.btn:active{transform:translateY(1px) scale(.985)}
+.btn-ripple{position:absolute;z-index:-1;pointer-events:none;width:20px;height:20px;border-radius:50%;transform:translate(-50%,-50%) scale(0);background:radial-gradient(circle,rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 70%);animation:btnRipple .6s ease forwards}
+@keyframes btnRipple{from{transform:translate(-50%,-50%) scale(0);opacity:.9}to{transform:translate(-50%,-50%) scale(4);opacity:0}}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5000;padding:10px var(--gutter)}
+.nav-in{max-width:var(--max);margin-inline:auto;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:999px;display:flex;align-items:center;gap:1rem;padding:6px 8px 6px 20px;box-shadow:0 12px 40px -18px rgba(0,0,0,.55),0 0 0 1px var(--line)}
+.nav-logo{display:flex;align-items:center;flex:none}
+.nav-logo img{height:54px;width:auto}
+.nav-links{display:flex;gap:1.5rem;margin-inline:auto;font-weight:600;font-size:.93rem}
+.nav-links a{text-decoration:none;position:relative;padding:.4rem 0}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-ph{font-weight:700;font-size:.95rem;text-decoration:none;font-variant-numeric:tabular-nums;white-space:nowrap}
+.nav .btn{padding:.85rem 1.2rem;font-size:.92rem}
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;border-radius:50%;margin-left:auto}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:5px auto;transition:transform .25s var(--ease)}
+@media(max-width:960px){
+  .nav-links{display:none;position:absolute;left:var(--gutter);right:var(--gutter);top:calc(100% - 2px);background:#fff;border-radius:20px;padding:1rem 1.4rem;flex-direction:column;gap:.2rem;box-shadow:0 20px 50px -20px rgba(0,0,0,.5),0 0 0 1px var(--line)}
+  .nav-links a{padding:.7rem 0;font-size:1.05rem}
+  .nav.open .nav-links{display:flex}
+  .nav-ph{display:none}.burger{display:block}
+  .nav.open .burger span:first-child{transform:translateY(3.5px) rotate(45deg)}
+  .nav.open .burger span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+}
+@media(max-width:420px){.nav-logo img{height:38px}.nav .btn{padding:.8rem 1rem;font-size:.85rem}.nav-in{padding-left:14px;gap:.4rem}}
+
+/* hero */
+.hero{margin-top:-78px;padding-top:clamp(120px,14vw,170px);padding-bottom:clamp(56px,7vw,96px);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -10% -40% 30%;height:70%;background:radial-gradient(closest-side,rgba(203,150,92,.22),transparent);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);align-items:center;position:relative;z-index:1}
+.hero h1{font-size:clamp(3.4rem,9.2vw,7.4rem);font-weight:900;line-height:.86;margin-block:1.1rem 1.4rem}
+.hero h1 span{display:block}
+.hero h1 .l2{color:var(--copper)}
+.hero h1 .l3{-webkit-text-stroke:1.5px #EEF0F3;color:transparent}
+.hero p.lede{font-size:1.15rem;color:#C9CED6}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.proof{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-top:1.8rem;font-size:.92rem;color:var(--muted-dark);align-items:center}
+.proof b{color:#fff}
+.stars{color:var(--copper-hi);letter-spacing:.12em}
+.collage{position:relative;aspect-ratio:1/1.02;max-width:560px;width:100%;margin-inline:auto}
+.collage figure{margin:0;position:absolute;border-radius:var(--r);overflow:hidden;box-shadow:0 30px 70px -25px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.1);will-change:transform}
+.collage img{width:100%;height:100%;object-fit:cover}
+.c1{left:0;top:6%;width:74%;aspect-ratio:4/3;transform:rotate(-3deg)}
+.c2{right:0;top:0;width:40%;aspect-ratio:3/4;transform:rotate(4deg)}
+.c3{right:4%;bottom:0;width:66%;aspect-ratio:4/3;transform:rotate(2deg)}
+.badge{position:absolute;left:2%;bottom:9%;z-index:3;background:#fff;color:var(--ink);border-radius:18px;padding:.9rem 1.1rem;display:flex;gap:.8rem;align-items:center;box-shadow:0 20px 50px -15px rgba(0,0,0,.7);animation:bob 5s ease-in-out infinite}
+.badge strong{font-family:var(--display);font-size:2.6rem;line-height:.9;font-weight:900}
+.badge small{display:block;font-size:.78rem;color:var(--muted);font-weight:600;line-height:1.3}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+.hero h1 span,.hero .lede,.hero .cta-row,.hero .proof,.hero .eyebrow{animation:rise .9s var(--ease) both}
+.hero h1 .l2{animation-delay:.08s}.hero h1 .l3{animation-delay:.16s}.hero .lede{animation-delay:.26s}.hero .cta-row{animation-delay:.34s}.hero .proof{animation-delay:.42s}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.collage{max-width:440px}}
+
+/* ticker */
+.ticker{background:var(--copper);color:#1A1208;overflow:hidden;padding-block:.85rem;font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.35rem;letter-spacing:.04em}
+.ticker-track{display:flex;gap:2.2rem;width:max-content;animation:tick 38s linear infinite}
+.ticker span{display:flex;align-items:center;gap:2.2rem;white-space:nowrap}
+.ticker span::after{content:"";width:9px;height:9px;background:#1A1208;transform:rotate(45deg)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--line)}
+.stat{padding:clamp(22px,3vw,40px) clamp(12px,2vw,28px);border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat b{font-family:var(--display);font-weight:900;font-size:clamp(3rem,7vw,5.2rem);line-height:.9;display:block;font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:.95rem;font-weight:500}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.svc{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/4.6;background:var(--ink);color:#fff;display:flex;align-items:flex-end;text-decoration:none}
+.svc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.svc::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(19,24,32,0) 30%,rgba(19,24,32,.92) 88%)}
+.svc:hover img{transform:scale(1.07)}
+.svc-body{position:relative;z-index:2;padding:1.4rem;display:grid;gap:.5rem;min-width:0}
+.svc-body p{font-size:.94rem;color:#D3D7DD;line-height:1.5}
+.svc-body em{font-style:normal;font-weight:700;font-size:.88rem;color:var(--copper-hi);display:inline-flex;gap:.4rem;align-items:center;transition:gap .3s var(--ease)}
+.svc:hover em{gap:.8rem}
+.also{margin-top:26px;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.also b{font-size:.85rem;text-transform:uppercase;letter-spacing:.12em;margin-right:.4rem}
+.chip{border:1px solid var(--line);border-radius:999px;padding:.45rem .95rem;font-size:.9rem;font-weight:600;background:var(--white)}
+@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.svc-grid{grid-template-columns:1fr}.svc{aspect-ratio:4/3.4}}
+
+/* before / after */
+.ba-sec{background:var(--slab)}
+.ba-tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:18px}
+.ba-tab{border:1px solid var(--line);background:transparent;color:var(--text);font:600 .93rem var(--body);padding:.6rem 1.1rem;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
+.ba-tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ba{position:relative;aspect-ratio:4/3;max-height:640px;width:100%;border-radius:var(--r);overflow:hidden;--p:50%;background:var(--ink);box-shadow:0 40px 80px -40px rgba(19,24,32,.6)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;user-select:none;pointer-events:none}
+.ba .before{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--p);width:3px;background:#fff;transform:translateX(-50%);pointer-events:none}
+.ba-line::after{content:"";position:absolute;top:50%;left:50%;width:52px;height:52px;border-radius:50%;transform:translate(-50%,-50%);background:var(--copper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A1208' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 6l-6 6 6 6M15 6l6 6-6 6'/%3E%3C/svg%3E") center/24px no-repeat;box-shadow:0 0 0 4px #fff,0 10px 30px rgba(0,0,0,.4)}
+.ba-tag{position:absolute;top:14px;z-index:2;background:rgba(19,24,32,.82);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.4rem .75rem;border-radius:999px;pointer-events:none}
+.ba-tag.l{left:14px}.ba-tag.r{right:14px;background:var(--copper);color:#1A1208}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;z-index:3}
+.ba-cap{margin-top:14px;color:var(--muted);font-size:.95rem}
+
+#work{overflow:hidden}
+.dc{position:relative;height:clamp(330px,80vw,500px);display:flex;align-items:center;justify-content:center;perspective:1400px;touch-action:pan-y;outline:none;user-select:none;cursor:grab}
+.dc:active{cursor:grabbing}
+.dc-stage{position:absolute;inset:0 0 50px 0;transform-style:preserve-3d;transform:translateX(var(--dc-shift,0px))}
+.dc-card{position:absolute;top:50%;left:50%;width:440px;height:330px;border-radius:16px;transform:translate(-50%,-50%);overflow:hidden;background:var(--ink-2);box-shadow:0 30px 60px -24px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08);will-change:transform,opacity,filter;cursor:pointer}
+.dc-card img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.dc-tint{position:absolute;inset:0;opacity:0;pointer-events:none;background:#0A0E14;mix-blend-mode:multiply}
+.dc-cap{position:absolute;left:0;right:0;bottom:0;padding:2.4rem 1.1rem 1rem;background:linear-gradient(180deg,transparent,rgba(10,14,20,.9));color:#fff;font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.3rem;line-height:1;pointer-events:none}
+.dc-cap small{display:block;font-family:var(--body);text-transform:none;font-weight:500;font-size:.82rem;color:var(--copper-hi);margin-top:.3rem}
+.dc-nav{position:absolute;left:0;right:0;bottom:0;z-index:3000;display:flex;align-items:center;justify-content:center;gap:.4rem}
+.nav-arrow{width:44px;height:44px;padding:0;display:grid;place-items:center;border:1px solid var(--line-dark);background:rgba(255,255,255,.06);color:#fff;cursor:pointer;border-radius:999px;transition:background .2s}
+.nav-arrow:hover{background:var(--copper);color:#1A1208}
+.nav-arrow svg{width:18px;height:18px}
+.dc-dots{display:flex}
+.dc-dot{width:18px;height:44px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center}
+.dc-dot::before{content:"";width:6px;height:6px;border-radius:999px;background:rgba(255,255,255,.3);transition:background .2s ease,width .2s ease}
+.dc-dot.is-active::before{width:16px;background:var(--copper)}
+.work-foot{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;margin-top:26px}
+
+/* process scroll stack */
+.steps{display:grid;gap:16px}
+@media(min-width:800px){.steps:not(.is-stacking){grid-template-columns:repeat(2,1fr)}}
+.steps.is-stacking{display:block;max-width:52rem;margin-inline:auto}
+.steps.is-stacking .step{margin-bottom:5rem;transform-origin:top center;backface-visibility:hidden;will-change:transform,filter;box-shadow:0 24px 50px -28px rgba(19,24,32,.5)}
+.stack-end{height:1px;margin-top:30vh}
+.step{background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);min-height:15rem}
+.step-body{padding:clamp(1.3rem,3vw,2.2rem);display:grid;gap:.7rem;align-content:center;min-width:0}
+.step-n{font-family:var(--display);font-weight:900;font-size:1rem;letter-spacing:.14em;color:var(--copper-deep)}
+.step h3{font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.step p{color:var(--muted);font-size:.98rem}
+.step img{width:100%;height:100%;object-fit:cover;min-height:160px}
+@media(max-width:640px){.step{grid-template-columns:1fr}.step img{height:170px;order:-1}}
+
+/* reviews */
+.rev-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px);align-items:start}
+.rev-score{position:sticky;top:110px;display:grid;gap:1rem}
+.rev-score .big{font-family:var(--display);font-weight:900;font-size:clamp(6rem,16vw,11rem);line-height:.8}
+.rev-score .stars{font-size:1.6rem}
+.themes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.theme{background:var(--ink-2);border:1px solid var(--line-dark);border-radius:var(--r);padding:1.2rem 1.25rem;display:grid;gap:.35rem;transition:transform .3s var(--ease),border-color .3s}
+.theme:hover{transform:translateY(-4px);border-color:var(--copper)}
+.theme b{font-family:var(--display);text-transform:uppercase;font-size:1.3rem;font-weight:800;line-height:1.05}
+.theme span{color:var(--muted-dark);font-size:.92rem;line-height:1.45}
+.note{font-size:.82rem;color:var(--muted-dark);margin-top:16px}
+@media(max-width:820px){.rev-grid{grid-template-columns:1fr}.rev-score{position:static}}
+@media(max-width:480px){.themes{grid-template-columns:1fr}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.about-copy{display:grid;gap:1.1rem}
+.about-copy p{color:var(--muted)}
+.crew{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.mate{background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.mate:nth-child(2){transform:translateY(28px)}
+.mate img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top}
+.mate-b{padding:1rem 1.1rem 1.2rem;display:grid;gap:.25rem}
+.mate-b small{color:var(--muted);font-size:.84rem;font-weight:600}
+.ph{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-top:.4rem}
+.ph a{font-weight:700;font-size:1.08rem;text-decoration:none;font-variant-numeric:tabular-nums;white-space:nowrap}
+.copy{border:1px solid var(--line);background:var(--paper);color:var(--text);border-radius:999px;font:600 .76rem var(--body);padding:.3rem .65rem;cursor:pointer}
+.callbtn{display:inline-flex;align-items:center;background:var(--copper);color:#1A1208;border-radius:999px;font:700 .82rem var(--body);padding:.5rem .95rem;text-decoration:none;white-space:nowrap;transition:transform .2s var(--ease),background .2s}
+.callbtn:hover{background:var(--copper-hi);transform:translateY(-1px)}
+.copy:hover{background:var(--ink);color:#fff}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+/* areas + faq */
+.af{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px)}
+.areas{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.faq details{border-bottom:1px solid var(--line);padding-block:1.1rem}
+.faq summary{cursor:pointer;list-style:none;font-weight:700;font-size:1.06rem;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:1.8rem;line-height:1;color:var(--copper-deep);transition:transform .3s var(--ease);flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{color:var(--muted);margin-top:.7rem;max-width:60ch}
+@media(max-width:860px){.af{grid-template-columns:1fr}}
+
+/* quote */
+.quote-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.q-left{display:grid;gap:1.3rem}
+.q-left h2{font-size:clamp(2.8rem,7vw,5.4rem)}
+.q-calls{display:grid;gap:.7rem;margin-top:.4rem}
+.q-call{display:flex;align-items:center;gap:.9rem;background:var(--ink-2);border:1px solid var(--line-dark);border-radius:var(--r);padding:.8rem 1rem}
+.q-call img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:top;flex:none}
+.q-call div{min-width:0;flex:1}
+.q-call small{display:block;color:var(--muted-dark);font-size:.82rem}
+.q-call a{font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1;text-decoration:none;color:#fff;white-space:nowrap}
+
+form.q{background:var(--white);color:var(--text);border-radius:22px;padding:clamp(1.2rem,3vw,2.2rem);display:grid;gap:1.1rem;box-shadow:0 40px 90px -40px rgba(0,0,0,.8)}
+.f-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.f label,.f legend{font-size:.82rem;font-weight:700;letter-spacing:.04em;display:block;margin-bottom:.4rem;padding:0}
+.f input,.f textarea,.f select{width:100%;font:500 1rem var(--body);color:var(--text);background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:.85rem .95rem;transition:border-color .2s,box-shadow .2s}
+.f input:focus,.f textarea:focus,.f select:focus{outline:0;border-color:var(--copper);box-shadow:0 0 0 4px rgba(203,150,92,.25)}
+fieldset.f{border:0;padding:0;margin:0;min-width:0}
+.opts{display:flex;flex-wrap:wrap;gap:.45rem}
+.opts label{margin:0;cursor:pointer}
+.opts input{position:absolute;opacity:0;width:1px;height:1px}
+.opts span{display:block;border:1.5px solid var(--line);border-radius:999px;padding:.5rem .95rem;font-size:.9rem;font-weight:600;letter-spacing:0;transition:all .2s}
+.opts input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.opts input:focus-visible+span{outline:3px solid var(--copper);outline-offset:2px}
+form.q .btn{width:100%;padding:1.2rem;font-size:1.05rem}
+.fine{font-size:.82rem;color:var(--muted);text-align:center}
+.err{color:#A3261C;font-size:.88rem;font-weight:600}
+.done{display:grid;gap:1rem}
+.done pre{white-space:pre-wrap;font:500 .92rem/1.55 var(--body);background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1rem;margin:0}
+@media(max-width:860px){.quote-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.f-row{grid-template-columns:1fr}}
+
+/* footer */
+.foot{background:#0C1016;color:var(--muted-dark);padding-block:56px 110px;position:relative;overflow:hidden}
+.foot-big{font-family:var(--display);font-weight:900;font-size:clamp(7rem,30vw,24rem);line-height:.75;color:transparent;-webkit-text-stroke:1px rgba(203,150,92,.3);text-align:center;white-space:nowrap;user-select:none;will-change:transform;margin-bottom:34px}
+.foot-row{display:flex;flex-wrap:wrap;gap:1rem 2.5rem;justify-content:space-between;font-size:.9rem;border-top:1px solid var(--line-dark);padding-top:24px}
+.foot-row b{color:#fff}
+.foot a{color:var(--copper-hi)}
+
+/* mobile sticky bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:4000;display:none;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(12,16,22,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transform:translateY(110%);transition:transform .4s var(--ease)}
+.mbar.show{transform:none}
+.mbar .btn{flex:1;padding:.95rem .6rem;font-size:.95rem}
+@media(max-width:760px){.mbar{display:flex}}
+
+/* reveal */
+.pre{opacity:0;transform:translateY(34px)}
+.rv{transition:opacity .9s var(--ease),transform .9s var(--ease)}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important}
+  .btn::before,.btn-ripple{display:none}
+  .btn:active,.btn-primary:hover,.theme:hover{transform:none}
+  .svc img,.rv,.mbar{transition:none}
+  .dc-card{will-change:auto}
+}
+</style>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="nav-logo" href="#top" aria-label="CNB Concreting home"><img src="img/logo.png" alt="CNB Concreting logo" width="600" height="486"></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#process">How we work</a>
+      <a href="#about">Chris and Bart</a>
+      <a href="#areas">Areas</a>
+    </nav>
+    <a class="nav-ph" href="tel:0422153721">0422 153 721</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <a class="btn btn-primary" href="#quote">Free quote</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero dark">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Brisbane concreters. Servicing South East Queensland.</p>
+      <h1><span>Concrete</span><span class="l2">done right.</span><span class="l3">First pour.</span></h1>
+      <p class="lede">Driveways, pool surrounds, slabs and decorative finishes from two local blokes with 20+ years on the tools. We turn up when we say we will, keep you in the loop and leave your place spotless.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#quote">Get my free quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#work">See our work</a>
+      </div>
+      <div class="proof">
+        <span><span class="stars" aria-hidden="true">★★★★★</span> <b>5.0</b> from 17 Google reviews</span>
+        <span><b>20+ years</b> experience</span>
+        <span>Locally owned since <b>2021</b></span>
+      </div>
+    </div>
+    <div class="collage" id="collage" aria-label="Recent CNB Concreting projects">
+      <figure class="c1" data-d="14"><img src="img/driveway.jpg" alt="Exposed aggregate driveway poured by CNB Concreting in Brisbane" width="852" height="640"></figure>
+      <figure class="c2" data-d="-22"><img src="img/entry-steps.jpg" alt="Honed concrete entry steps to a Brisbane home" width="476" height="645"></figure>
+      <figure class="c3" data-d="30"><img src="img/pool-pebble-pads.jpg" alt="Concrete pool surround with floating stepping pads and white pebbles" width="852" height="637"></figure>
+      <div class="badge"><strong>5.0</strong><div><span class="stars" aria-hidden="true">★★★★★</span><small>Google rating<br>17 reviews</small></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="tick">
+  <span>Driveways</span><span>Pool surrounds</span><span>Exposed aggregate</span><span>Shed slabs</span><span>Spraycrete</span><span>Covercrete</span><span>Concrete levelling</span><span>Extensions</span><span>Commercial</span><span>Steps and paths</span>
+</div></div>
+
+<section class="wrap" aria-label="CNB Concreting at a glance">
+  <div class="stats">
+    <div class="stat"><b data-count="5" data-dec="1">5.0</b><span>Google star rating</span></div>
+    <div class="stat"><b data-count="17">17</b><span>Five star reviews</span></div>
+    <div class="stat"><b data-count="20" data-suf="+">20+</b><span>Years on the tools</span></div>
+    <div class="stat"><b data-count="2021" data-plain="1">2021</b><span>Brisbane owned since</span></div>
+  </div>
+</section>
+
+<section class="sec wrap" id="services">
+  <div class="head rv">
+    <p class="eyebrow">What we pour</p>
+    <h2>From the driveway to the <span class="cu">back deck.</span></h2>
+    <p class="lede">Residential, commercial and decorative concreting. Big job or small, you get the same crew, the same care and a finish you'll be stoked with.</p>
+  </div>
+  <div class="svc-grid">
+    <a class="svc rv" href="#quote"><img src="img/driveway-flags.jpg" alt="New exposed aggregate driveway in Brisbane" loading="lazy"><div class="svc-body"><h3>Driveways</h3><p>New driveways and replacements that lift your street appeal and cop a Queensland summer.</p><em>Quote my driveway <span>→</span></em></div></a>
+    <a class="svc rv" href="#quote"><img src="img/pool-charcoal.jpg" alt="Charcoal concrete pool surround" loading="lazy"><div class="svc-body"><h3>Pool surrounds</h3><p>Slip conscious, barefoot friendly surrounds poured tight to your coping.</p><em>Quote my pool area <span>→</span></em></div></a>
+    <a class="svc rv" href="#quote"><img src="img/patio-agg.jpg" alt="Exposed aggregate patio under a Queenslander" loading="lazy"><div class="svc-body"><h3>Exposed aggregate</h3><p>The classic Brisbane finish. Pick your stone mix and we'll bring it up a treat.</p><em>Quote my patio <span>→</span></em></div></a>
+    <a class="svc rv" href="#quote"><img src="img/garden-steps.jpg" alt="Concrete garden steps on a sloping Brisbane block" loading="lazy"><div class="svc-body"><h3>Steps and paths</h3><p>Sloping block? No dramas. Stairs, side paths and stepping pads built to last.</p><em>Quote my steps <span>→</span></em></div></a>
+    <a class="svc rv" href="#quote"><img src="img/pool-slab-posts.jpg" alt="Freshly finished concrete slab" loading="lazy"><div class="svc-body"><h3>Slabs and extensions</h3><p>Shed slabs, house slabs and extensions, set out square and poured dead level.</p><em>Quote my slab <span>→</span></em></div></a>
+    <a class="svc rv" href="#quote"><img src="img/pool-formwork.jpg" alt="Formwork and steel set out before a pour" loading="lazy"><div class="svc-body"><h3>Commercial</h3><p>Formwork, steel and pours for builders and developers who need it done on program.</p><em>Talk to us <span>→</span></em></div></a>
+  </div>
+  <div class="also rv"><b>Also on the tools</b><span class="chip">Spraycrete</span><span class="chip">Covercrete</span><span class="chip">Concrete levelling</span><span class="chip">Stormwater</span><span class="chip">Earthworks</span><span class="chip">Trade coordination</span></div>
+</section>
+
+<section class="sec ba-sec" id="proof">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Same job, start to finish</p>
+      <h2>Drag to see the <span class="cu">glow up.</span></h2>
+      <p class="lede">The bit you never see is the bit that matters. Proper prep, proper steel, then a finish worth showing the neighbours.</p>
+    </div>
+    <div class="ba-tabs" role="tablist" aria-label="Choose a project">
+      <button class="ba-tab" role="tab" aria-selected="true" data-b="patio-mesh" data-a="patio-agg" data-c="Back patio. Vapour barrier, mesh and bar chairs set out, then finished in exposed aggregate.">Back patio</button>
+      <button class="ba-tab" role="tab" aria-selected="false" data-b="steps-formwork" data-a="garden-steps" data-c="Garden stairs on a steep block. Formed and reinforced, then poured and finished.">Garden stairs</button>
+      <button class="ba-tab" role="tab" aria-selected="false" data-b="pool-wet" data-a="pool-pebble-pads" data-c="Pool surround with floating pads. Fresh off the trowel, then finished with pebbles and glass fencing.">Pool surround</button>
+    </div>
+    <div class="ba rv" id="ba">
+      <img class="after" id="baA" src="img/patio-agg.jpg" alt="Finished exposed aggregate patio">
+      <img class="before" id="baB" src="img/patio-mesh.jpg" alt="The same patio at prep stage with steel mesh laid">
+      <span class="ba-tag l">Prep</span><span class="ba-tag r">Finished</span>
+      <div class="ba-line"></div>
+      <input type="range" id="baRange" min="0" max="100" value="50" aria-label="Slide to compare prep and finished photos">
+    </div>
+    <p class="ba-cap" id="baCap">Back patio. Vapour barrier, mesh and bar chairs set out, then finished in exposed aggregate.</p>
+  </div>
+</section>
+
+<section class="sec dark" id="work">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Recent work</p>
+      <h2>Real jobs. <span class="cu">Real Brisbane backyards.</span></h2>
+      <p class="lede">No stock photos here. Every shot is a CNB pour. Drag, swipe or use the arrows.</p>
+    </div>
+    <div class="dc" id="depth" tabindex="0" role="region" aria-roledescription="carousel" aria-label="CNB Concreting project gallery">
+      <div class="dc-stage">
+        <div class="dc-card"><img src="img/driveway.jpg" alt="Exposed aggregate driveway with sweeping curved edge"><span class="dc-tint"></span><span class="dc-cap">Curved driveway<small>Exposed aggregate</small></span></div>
+        <div class="dc-card"><img src="img/pool-pebble-pads.jpg" alt="Pool surround with floating concrete pads in white pebbles" loading="lazy"><span class="dc-tint"></span><span class="dc-cap">Pool surround and pads<small>Honed finish with pebble inlay</small></span></div>
+        <div class="dc-card"><img src="img/agg-pool-steps.jpg" alt="Exposed aggregate steps leading to a pool gate" loading="lazy"><span class="dc-tint"></span><span class="dc-cap">Steps to the pool<small>Exposed aggregate</small></span></div>
+        <div class="dc-card"><img src="img/pool-charcoal.jpg" alt="Charcoal pool surround beside timber fence" loading="lazy"><span class="dc-tint"></span><span class="dc-cap">Charcoal pool deck<small>Coloured decorative finish</small></span></div>
+        <div class="dc-card"><img src="img/hillside-path.jpg" alt="Stepped concrete path down a sloping garden" loading="lazy"><span class="dc-tint"></span><span class="dc-cap">Hillside path<small>Stepped slabs on a sloping block</small></span></div>
+        <div class="dc-card"><img src="img/patio-agg.jpg" alt="Exposed aggregate patio beside a Queenslander" loading="lazy"><span class="dc-tint"></span><span class="dc-cap">Queenslander patio<small>Exposed aggregate</small></span></div>
+        <div class="dc-card"><img src="img/side-path.jpg" alt="Exposed aggregate side path with step" loading="lazy"><span class="dc-tint"></span><span class="dc-cap">Side access path<small>Exposed aggregate</small></span></div>
+        <div class="dc-card"><img src="img/turf-path.jpg" alt="Clean concrete path beside fresh turf" loading="lazy"><span class="dc-tint"></span><span class="dc-cap">Path and carport edge<small>Site left clean as a whistle</small></span></div>
+      </div>
+      <div class="dc-nav">
+        <button class="nav-arrow dc-prev" aria-label="Previous project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <div class="dc-dots" id="dots"></div>
+        <button class="nav-arrow dc-next" aria-label="Next project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="work-foot rv">
+      <p class="lede">Like what you see? Tell us what you're picturing and we'll make it happen.</p>
+      <a class="btn btn-primary" href="#quote">Start my project</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="process">
+  <div class="head rv">
+    <p class="eyebrow">How we work</p>
+    <h2>Four steps. <span class="cu">Zero surprises.</span></h2>
+    <p class="lede">You'll always know what's happening, when it's happening and what it costs.</p>
+  </div>
+  <div class="steps" id="steps">
+    <article class="step"><div class="step-body"><span class="step-n">STEP 01</span><h3>Free site visit and quote</h3><p>Chris or Bart comes out, has a proper look, talks through finishes and options, then sends a clear written quote. No pressure, no hidden extras.</p></div><img src="img/entry-steps.jpg" alt="Finished entry steps" loading="lazy"></article>
+    <article class="step"><div class="step-body"><span class="step-n">STEP 02</span><h3>Prep, formwork and steel</h3><p>We dig out, box up, lay the membrane and tie the steel. If you need earthworks, stormwater or other trades, we line them up for you.</p></div><img src="img/patio-mesh.jpg" alt="Steel mesh and formwork ready for a pour" loading="lazy"></article>
+    <article class="step"><div class="step-body"><span class="step-n">STEP 03</span><h3>Pour day</h3><p>Trucks booked, crew on site early, concrete placed, screeded and finished by hand. You get updates as we go, so you're never left guessing.</p></div><img src="img/pool-wet.jpg" alt="Freshly poured concrete around a pool" loading="lazy"></article>
+    <article class="step"><div class="step-body"><span class="step-n">STEP 04</span><h3>Clean up and handover</h3><p>We strip the formwork, tidy the site and walk you through care and curing. All that's left is the concrete and a tidy yard.</p></div><img src="img/turf-path.jpg" alt="Clean site with finished path and turf" loading="lazy"></article>
+  </div>
+</section>
+
+<section class="sec dark" id="reviews">
+  <div class="wrap rev-grid">
+    <div class="rev-score rv">
+      <p class="eyebrow">Google reviews</p>
+      <div class="big">5.0</div>
+      <div class="stars" aria-label="Five out of five stars">★★★★★</div>
+      <p class="lede">A perfect score from 17 Brisbane customers. Here's what keeps coming up in their reviews.</p>
+      <div><a class="btn btn-ghost" href="https://www.google.com/search?q=CNB+Concreting+Stafford+Heights+reviews" target="_blank" rel="noopener">Read them on Google</a></div>
+    </div>
+    <div>
+      <div class="themes">
+        <div class="theme rv"><b>Great communication</b><span>Regular updates through the job, so nobody is left chasing.</span></div>
+        <div class="theme rv"><b>Turned up on time</b><span>Reliable and punctual, which is rarer than it should be.</span></div>
+        <div class="theme rv"><b>Left the site clean</b><span>Tidy while working and spotless at handover.</span></div>
+        <div class="theme rv"><b>Fair pricing</b><span>Competitive quotes that match the final invoice.</span></div>
+        <div class="theme rv"><b>Helpful with design</b><span>Clear guidance on finishes, colours and layout options.</span></div>
+        <div class="theme rv"><b>Handled the tricky stuff</b><span>Complex sites and multiple trades, coordinated without the stress.</span></div>
+        <div class="theme rv"><b>Back for more</b><span>Repeat customers who call CNB for the next job too.</span></div>
+        <div class="theme rv"><b>Quality finish</b><span>Attention to detail you notice every time you pull into the drive.</span></div>
+      </div>
+      <p class="note">Themes summarised from CNB Concreting's public Google reviews.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="about">
+  <div class="about-grid">
+    <div class="about-copy rv">
+      <p class="eyebrow">Meet the blokes behind CNB</p>
+      <h2>Two family men. <span class="cu">One standard.</span></h2>
+      <p>CNB Concreting came together in 2021, when Chris McCormick and Bart Baker shared a vision to give their clients a premium concreting service.</p>
+      <p>With over 20 years of experience in concreting and the construction industry, they bring a comprehensive background to every job and help customers bring their vision to life.</p>
+      <p>CNB works across all aspects of concreting, from commercial to residential and decorative, with a focus on South East Queensland. Chris and Bart are family men who pride themselves on reliability and attention to detail.</p>
+      <div><a class="btn btn-dark" href="#quote">Have a yarn with us</a></div>
+    </div>
+    <div class="crew">
+      <div class="mate rv"><img src="img/chris.jpg" alt="Chris McCormick, co-owner of CNB Concreting" loading="lazy"><div class="mate-b"><h3>Chris McCormick</h3><small>Co-owner</small><div class="ph"><a href="tel:0422153721">0422 153 721</a><a class="callbtn" href="tel:0422153721" aria-label="Call 0422 153 721">Call now</a></div></div></div>
+      <div class="mate rv"><img src="img/bart.jpg" alt="Bart Baker, co-owner of CNB Concreting" loading="lazy"><div class="mate-b"><h3>Bart Baker</h3><small>Co-owner</small><div class="ph"><a href="tel:0404488456">0404 488 456</a><a class="callbtn" href="tel:0404488456" aria-label="Call 0404 488 456">Call now</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ba-sec" id="areas">
+  <div class="wrap af">
+    <div class="rv">
+      <p class="eyebrow">Where we work</p>
+      <h2 style="margin-top:1rem">Based northside. <span class="cu">Pouring all over SEQ.</span></h2>
+      <p class="lede" style="margin-top:1rem">We're based in Stafford Heights and work right across Brisbane and South East Queensland. Not sure if we come out your way? Give us a bell.</p>
+      <div class="areas"><span class="chip">Brisbane Northside</span><span class="chip">Brisbane Southside</span><span class="chip">Stafford Heights</span><span class="chip">Chermside</span><span class="chip">Everton Park</span><span class="chip">Aspley</span><span class="chip">Kedron</span><span class="chip">The Gap</span><span class="chip">Albany Creek</span><span class="chip">Moreton Bay</span><span class="chip">Ipswich</span><span class="chip">Logan</span><span class="chip">Redlands</span><span class="chip">Gold Coast</span><span class="chip">Sunshine Coast</span></div>
+    </div>
+    <div class="faq rv">
+      <p class="eyebrow" style="margin-bottom:.6rem">Good questions</p>
+      <details open><summary>How much does a concrete driveway cost in Brisbane?</summary><p>It depends on the size, access, how much dig out is needed and the finish you choose. Plain concrete sits at the lower end and exposed aggregate or coloured finishes cost more. We'll come out, measure up and give you a fixed written quote for free.</p></details>
+      <details><summary>How soon can I drive on my new driveway?</summary><p>As a rule of thumb you can walk on it after a day or two and park a car on it after about a week. We'll give you exact advice for your job at handover.</p></details>
+      <details><summary>Do you do exposed aggregate and coloured concrete?</summary><p>Yes. Decorative work is a big part of what we do, including exposed aggregate, coloured concrete, Spraycrete and Covercrete resurfacing. We'll walk you through the options.</p></details>
+      <details><summary>Can you organise the other trades?</summary><p>Yes. We regularly coordinate earthworks, stormwater and other trades so you've got one point of contact from start to finish.</p></details>
+      <details><summary>Do you take on small jobs?</summary><p>Too right. A side path gets the same care as a full commercial slab.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="quote">
+  <div class="wrap quote-grid">
+    <div class="q-left rv">
+      <p class="eyebrow">Free, no obligation</p>
+      <h2>Let's get your job <span class="cu">sorted.</span></h2>
+      <p class="lede">Tell us a bit about the job and we'll get back to you quick smart. Rather talk? Call Chris or Bart direct.</p>
+      <div class="q-calls">
+        <div class="q-call"><img src="img/chris.jpg" alt="" loading="lazy"><div><small>Call Chris</small><a href="tel:0422153721">0422 153 721</a></div><a class="callbtn" href="tel:0422153721" aria-label="Call 0422 153 721">Call now</a></div>
+        <div class="q-call"><img src="img/bart.jpg" alt="" loading="lazy"><div><small>Call Bart</small><a href="tel:0404488456">0404 488 456</a></div><a class="callbtn" href="tel:0404488456" aria-label="Call 0404 488 456">Call now</a></div>
+      </div>
+    </div>
+    <form class="q rv" id="qform" novalidate>
+      <div class="f-row">
+        <div class="f"><label for="q-name">Your name</label><input id="q-name" name="name" autocomplete="name" placeholder="Sam Taylor" required></div>
+        <div class="f"><label for="q-phone">Best number</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" placeholder="04xx xxx xxx" required></div>
+      </div>
+      <div class="f-row">
+        <div class="f"><label for="q-suburb">Suburb</label><input id="q-suburb" name="suburb" placeholder="Chermside" required></div>
+        <div class="f"><label for="q-when">When do you want it done?</label><select id="q-when" name="when"><option>As soon as possible</option><option>Within a month</option><option>In 1 to 3 months</option><option>Just getting prices</option></select></div>
+      </div>
+      <fieldset class="f"><legend>What do you need poured?</legend>
+        <div class="opts">
+          <label><input type="radio" name="job" id="q-j1" value="Driveway" checked><span>Driveway</span></label>
+          <label><input type="radio" name="job" id="q-j2" value="Pool surround"><span>Pool surround</span></label>
+          <label><input type="radio" name="job" id="q-j3" value="Patio or entertaining area"><span>Patio</span></label>
+          <label><input type="radio" name="job" id="q-j4" value="Shed or house slab"><span>Slab</span></label>
+          <label><input type="radio" name="job" id="q-j5" value="Steps or paths"><span>Steps or paths</span></label>
+          <label><input type="radio" name="job" id="q-j6" value="Commercial"><span>Commercial</span></label>
+          <label><input type="radio" name="job" id="q-j7" value="Something else"><span>Something else</span></label>
+        </div>
+      </fieldset>
+      <div class="f"><label for="q-msg">Anything else we should know? (optional)</label><textarea id="q-msg" name="msg" rows="3" placeholder="Rough size, finish you like, access to the site..."></textarea></div>
+      <p class="err" id="qerr" hidden>Pop in your name, number and suburb so we can get back to you.</p>
+      <button class="btn btn-primary" type="submit">Get my free quote</button>
+      <p class="fine">No spam, no hard sell. Just a straight answer from Chris or Bart.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot-big" id="footBig" aria-hidden="true">CNB CNB</div>
+  <div class="wrap foot-row">
+    <div><b>CNB Concreting Pty Ltd</b><br>Stafford Heights QLD 4053<br>ABN 39 655 477 526</div>
+    <div><b>Chris</b> 0422 153 721<br><b>Bart</b> 0404 488 456</div>
+    <div>Driveways, pool surrounds, slabs and decorative<br>concreting across Brisbane and South East Queensland.</div>
+    <div>Website concept by <a href="https://magolabs.in" target="_blank" rel="noopener">Mago Labs</a></div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="btn btn-ghost" href="tel:0422153721">Call 0422 153 721</a>
+  <a class="btn btn-primary" href="#quote">Free quote</a>
+</div>
+
+<script>
+(function(){
+'use strict';
+var REDUCED=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+
+/* exposed aggregate texture for dark sections, drawn once */
+(function(){
+  try{
+    var c=document.createElement('canvas'),s=420;c.width=c.height=s;var x=c.getContext('2d');
+    var cols=['255,255,255','203,150,92','120,132,150','20,26,36'];
+    for(var i=0;i<900;i++){
+      var r=Math.random()*1.9+.3,a=Math.random()*.11+.02;
+      x.fillStyle='rgba('+cols[(Math.random()*cols.length)|0]+','+a.toFixed(3)+')';
+      x.beginPath();x.ellipse(Math.random()*s,Math.random()*s,r,r*(.6+Math.random()*.6),Math.random()*3,0,6.3);x.fill();
+    }
+    document.documentElement.style.setProperty('--agg','url('+c.toDataURL()+')');
+  }catch(e){}
+})();
+
+/* nav */
+var nav=$('#nav'),burger=$('#burger');
+burger.addEventListener('click',function(){var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+$$('.nav-links a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');burger.setAttribute('aria-expanded','false')})});
+
+/* ticker: duplicate for seamless loop */
+var tick=$('#tick');tick.innerHTML+=tick.innerHTML;
+
+/* button ripple */
+if(!REDUCED)document.addEventListener('pointerdown',function(e){
+  var el=e.target.closest('.btn');if(!el)return;
+  var r=el.getBoundingClientRect(),d=document.createElement('span');d.className='btn-ripple';
+  d.style.left=(e.clientX-r.left)+'px';d.style.top=(e.clientY-r.top)+'px';
+  d.addEventListener('animationend',function(){d.remove()});el.appendChild(d);setTimeout(function(){d.remove()},900);
+},{passive:true});
+
+/* reveal: only elements below the fold are hidden, with a safety timer */
+if(!REDUCED&&'IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  $$('.rv').forEach(function(el,i){
+    if(el.getBoundingClientRect().top>innerHeight*.95){el.classList.add('pre');el.style.transitionDelay=(i%3*70)+'ms';io.observe(el)}
+  });
+  setTimeout(function(){if(!scrollY)return;},0);
+}
+
+/* count up */
+(function(){
+  var els=$$('[data-count]');if(REDUCED||!('IntersectionObserver' in window))return;
+  var o=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;o.unobserve(e.target);
+    var el=e.target,to=+el.dataset.count,dec=+el.dataset.dec||0,suf=el.dataset.suf||'',from=el.dataset.plain?to-21:0,t0=performance.now();
+    (function f(n){var k=Math.min(1,(n-t0)/1400),v=from+(to-from)*(1-Math.pow(1-k,3));el.textContent=v.toFixed(dec)+suf;if(k<1)requestAnimationFrame(f)})(t0);
+  })},{threshold:.5});
+  els.forEach(function(el){o.observe(el)});
+})();
+
+/* hero collage parallax + footer text + mobile bar, one rAF scroll handler */
+(function(){
+  var figs=$$('#collage figure'),base=figs.map(function(f){return getComputedStyle(f).transform}),big=$('#footBig'),mbar=$('#mbar'),quote=$('#quote'),q=false;
+  function run(){
+    q=false;var y=scrollY;
+    if(!REDUCED&&y<innerHeight*1.2)figs.forEach(function(f,i){f.style.transform='translate3d(0,'+(y*(+f.dataset.d)/260).toFixed(1)+'px,0) '+(base[i]==='none'?'':base[i])});
+    if(!REDUCED){var r=big.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)big.style.transform='translate3d('+((r.top-innerHeight)*.12).toFixed(1)+'px,0,0)'}
+    var qr=quote.getBoundingClientRect();
+    mbar.classList.toggle('show',y>500&&!(qr.top<innerHeight*.7&&qr.bottom>0));
+  }
+  addEventListener('scroll',function(){if(!q){q=true;requestAnimationFrame(run)}},{passive:true});run();
+})();
+
+/* before / after */
+(function(){
+  var ba=$('#ba'),rg=$('#baRange'),A=$('#baA'),B=$('#baB'),cap=$('#baCap'),touched=false;
+  function set(v){ba.style.setProperty('--p',v+'%')}
+  rg.addEventListener('input',function(){touched=true;set(rg.value)});
+  $$('.ba-tab').forEach(function(t){t.addEventListener('click',function(){
+    $$('.ba-tab').forEach(function(o){o.setAttribute('aria-selected',o===t)});
+    A.src='img/'+t.dataset.a+'.jpg';B.src='img/'+t.dataset.b+'.jpg';cap.textContent=t.dataset.c;rg.value=50;set(50);
+  })});
+  if(!REDUCED&&'IntersectionObserver' in window){
+    var o=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;o.disconnect();
+      var t0=performance.now();(function f(n){if(touched)return;var k=Math.min(1,(n-t0)/1800),v=50+Math.sin(k*Math.PI*2)*22*(1-k*.3);rg.value=v;set(v.toFixed(1));if(k<1)requestAnimationFrame(f);else{rg.value=50;set(50)}})(t0);
+    },{threshold:.6});o.observe(ba);
+  }
+})();
+
+/* depth carousel */
+(function(){
+  var root=$('#depth');if(!root)return;
+  var CFG={depth:200,spread:92,tilt:20,dir:1,visible:4,falloff:.18,blur:6,duration:700,autoplayDelay:3600,cardWidth:440};
+  var cards=$$('.dc-card',root),n=cards.length,dotsWrap=$('#dots');if(!n)return;
+  cards.forEach(function(_,i){var b=document.createElement('button');b.className='dc-dot'+(i?'':' is-active');b.setAttribute('aria-label','Go to project '+(i+1));dotsWrap.appendChild(b)});
+  var dots=$$('.dc-dot',root),pos=0,focus=0,scale=1,raf=0;
+  var clamp=function(v,a,b){return Math.min(Math.max(v,a),b)},easeOut=function(t){return 1-Math.pow(1-t,3)};
+  function layout(p){for(var i=0;i<n;i++){var el=cards[i],d=i-p;d=((d%n)+n)%n;if(d>n/2)d-=n;
+    var back=Math.max(0,d),shown=Math.abs(d)<=CFG.visible+.5,tz=-CFG.depth*d,tx=CFG.dir*CFG.spread*d,ry=CFG.dir*CFG.tilt*clamp(d,0,1),op=d<0?Math.max(0,1+d):1;if(!shown)op=0;
+    var bright=Math.max(.15,1-back*CFG.falloff),bl=Math.min(CFG.blur,(back/CFG.visible)*CFG.blur);
+    el.style.transform='translate(-50%,-50%) scale('+scale+') translateX('+tx.toFixed(2)+'px) translateZ('+tz.toFixed(2)+'px) rotateY('+ry.toFixed(3)+'deg)';
+    el.style.opacity=op.toFixed(3);el.style.filter='brightness('+bright.toFixed(3)+') blur('+bl.toFixed(2)+'px)';el.style.zIndex=String(Math.round(2000-d*20));el.style.pointerEvents=shown&&op>.05?'auto':'none';
+    var tint=el.querySelector('.dc-tint');if(tint)tint.style.opacity=clamp(back*CFG.falloff*1.25,0,.8).toFixed(3)}}
+  function tweenTo(target,animate){if(raf){cancelAnimationFrame(raf);raf=0}var from=pos,delta=target-from;
+    if(!animate||REDUCED||!delta){pos=((target%n)+n)%n;layout(pos);return}var t0=performance.now();
+    (function step(now){var k=Math.min(1,(now-t0)/CFG.duration);pos=from+delta*easeOut(k);layout(pos);if(k<1)raf=requestAnimationFrame(step);else{raf=0;pos=((pos%n)+n)%n;layout(pos)}})(t0)}
+  function setFocus(raw,animate){var idx=((raw%n)+n)%n,delta=idx-pos;delta=((delta%n)+n)%n;if(delta>n/2)delta-=n;tweenTo(pos+delta,animate!==false);
+    if(idx!==focus){focus=idx;dots.forEach(function(d,i){d.classList.toggle('is-active',i===idx)});cards.forEach(function(c,j){c.setAttribute('aria-hidden',j===idx?'false':'true')})}}
+  function nav(s){setFocus(focus+s,true)}
+  function fit(){var w=root.clientWidth;if(!w)return;var narrow=w<560;CFG.spread=narrow?44:92;CFG.depth=narrow?150:200;CFG.tilt=narrow?15:20;
+    var needed=CFG.cardWidth+Math.abs(CFG.spread)*2+(narrow?24:90);scale=clamp(w/needed,.4,1.25);
+    var fan=CFG.spread*Math.min(CFG.visible,n-1)*scale;root.style.setProperty('--dc-shift',(-fan*.2).toFixed(1)+'px');layout(pos)}
+  if(window.ResizeObserver)new ResizeObserver(fit).observe(root);else addEventListener('resize',fit);
+  var drag=null;
+  root.addEventListener('pointerdown',function(e){if(e.target.closest('.nav-arrow,.dc-dot'))return;if(raf){cancelAnimationFrame(raf);raf=0}drag={x:e.clientX,start:pos,lastX:e.clientX,lastT:performance.now(),v:0,moved:false,id:e.pointerId}});
+  root.addEventListener('pointermove',function(e){if(!drag)return;var stepPx=Math.max(CFG.cardWidth*.55*scale,40),dx=e.clientX-drag.x;
+    if(!drag.moved&&Math.abs(dx)>4){drag.moved=true;try{root.setPointerCapture(drag.id)}catch(err){}}if(!drag.moved)return;
+    var now=performance.now(),dt=Math.max(now-drag.lastT,1);drag.v=(e.clientX-drag.lastX)/dt;drag.lastX=e.clientX;drag.lastT=now;pos=drag.start-dx/stepPx;layout(pos)});
+  function endDrag(){if(!drag)return;var d=drag;drag=null;if(!d.moved)return;var stepPx=Math.max(CFG.cardWidth*.55*scale,40);setFocus(Math.round(pos-(d.v*180)/stepPx),true)}
+  root.addEventListener('pointerup',endDrag);root.addEventListener('pointercancel',endDrag);
+  var wheelT=0;root.addEventListener('wheel',function(e){if(Math.abs(e.deltaX)<=Math.abs(e.deltaY))return;e.preventDefault();if(raf){cancelAnimationFrame(raf);raf=0}
+    pos+=clamp(e.deltaX/(CFG.cardWidth*.9),-.6,.6);layout(pos);clearTimeout(wheelT);wheelT=setTimeout(function(){setFocus(Math.round(pos),true)},130)},{passive:false});
+  root.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();nav(-1)}else if(e.key==='ArrowRight'){e.preventDefault();nav(1)}});
+  $('.dc-prev',root).addEventListener('click',function(){nav(-1)});$('.dc-next',root).addEventListener('click',function(){nav(1)});
+  dots.forEach(function(d,i){d.addEventListener('click',function(){setFocus(i,true)})});
+  cards.forEach(function(c,i){c.addEventListener('click',function(){setFocus(i,true)})});
+  var timer=null,hovered=false,focused=false,onScreen=false;
+  function sync(){var run=!REDUCED&&onScreen&&!hovered&&!focused;if(run&&!timer)timer=setInterval(function(){nav(1)},CFG.autoplayDelay);if(!run&&timer){clearInterval(timer);timer=null}}
+  root.addEventListener('mouseenter',function(){hovered=true;sync()});root.addEventListener('mouseleave',function(){hovered=false;sync()});
+  root.addEventListener('focusin',function(){focused=true;sync()});root.addEventListener('focusout',function(){focused=false;sync()});
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){onScreen=es[0].isIntersecting;sync()},{threshold:.25}).observe(root);
+  fit();setFocus(0,false);
+})();
+
+/* process scroll stack */
+(function(){
+  if(REDUCED)return;
+  var wrap=$('#steps'),cards=$$('.step',wrap);if(cards.length<2)return;
+  var end=document.createElement('div');end.className='stack-end';end.setAttribute('aria-hidden','true');wrap.appendChild(end);
+  var CFG={stackPosition:.16,scaleEndPosition:.08,itemStackDistance:18,itemScale:.045,blurAmount:1};
+  var baseScale=1-(cards.length-1)*CFG.itemScale,rel=[],relEnd=0,deckBottom=0,vh=0,last=[],queued=false;
+  function measure(){vh=innerHeight;var saved=cards.map(function(c){return c.style.transform});
+    cards.forEach(function(c){c.style.transform='none';c.style.filter=''});
+    var wt=wrap.getBoundingClientRect().top;rel=cards.map(function(c){return c.getBoundingClientRect().top-wt});relEnd=end.getBoundingClientRect().top-wt;
+    var tall=0;cards.forEach(function(c){tall=Math.max(tall,c.offsetHeight)});
+    deckBottom=CFG.stackPosition*vh+CFG.itemStackDistance*(cards.length-1)+tall;
+    cards.forEach(function(c,j){c.style.transform=saved[j]});last=[];apply()}
+  function prog(v,a,b){return v<a?0:v>b?1:(v-a)/(b-a)}
+  function apply(){var top=scrollY,wt=wrap.getBoundingClientRect().top+top,sp=CFG.stackPosition*vh,se=CFG.scaleEndPosition*vh,pinEnd=wt+relEnd-deckBottom,ti=0;
+    for(var k=0;k<cards.length;k++)if(top>=wt+rel[k]-sp-CFG.itemStackDistance*k)ti=k;
+    for(var i=0;i<cards.length;i++){var ct=wt+rel[i],ps=ct-sp-CFG.itemStackDistance*i,target=baseScale+i*CFG.itemScale,sc=1-prog(top,ps,ct-se)*(1-target),ty=0;
+      if(top>=ps)ty=(top>pinEnd?pinEnd:top)-ct+sp+CFG.itemStackDistance*i;
+      var bl=i<ti?(ti-i)*CFG.blurAmount:0,t={y:Math.round(ty*100)/100,s:Math.round(sc*1000)/1000,b:bl},p=last[i];
+      if(p&&Math.abs(p.y-t.y)<.1&&Math.abs(p.s-t.s)<.001&&p.b===t.b)continue;
+      cards[i].style.transform='translate3d(0,'+t.y+'px,0) scale('+t.s+')';cards[i].style.filter=t.b>0?'blur('+t.b+'px)':'';last[i]=t}}
+  wrap.classList.add('is-stacking');measure();
+  addEventListener('scroll',function(){if(queued)return;queued=true;requestAnimationFrame(function(){queued=false;apply()})},{passive:true});
+  addEventListener('resize',measure);if(window.ResizeObserver)new ResizeObserver(measure).observe(wrap);
+})();
+
+/* copy buttons */
+document.addEventListener('click',function(e){
+  var b=e.target.closest('.copy');if(!b)return;var txt=b.dataset.copy||($('#qsum')||{}).textContent||'';
+  function ok(){var o=b.textContent;b.textContent='Copied';setTimeout(function(){b.textContent=o},1400)}
+  try{navigator.clipboard.writeText(txt).then(ok,function(){b.textContent='Select and copy'})}catch(err){b.textContent='Select and copy'}
+});
+
+/* quote form (demo: nothing is sent) */
+(function(){
+  var f=$('#qform'),err=$('#qerr');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();var d=new FormData(f),name=(d.get('name')||'').trim(),phone=(d.get('phone')||'').trim(),sub=(d.get('suburb')||'').trim();
+    if(!name||!phone||!sub){err.hidden=false;return}
+    var sum='Quote request for CNB Concreting\nName: '+name+'\nPhone: '+phone+'\nSuburb: '+sub+'\nJob: '+d.get('job')+'\nTiming: '+d.get('when')+((d.get('msg')||'').trim()?'\nNotes: '+d.get('msg').trim():'');
+    f.innerHTML='<div class="done"><p class="eyebrow">Demo preview</p><h3 style="font-size:2.4rem">Good on ya, '+name.split(' ')[0].replace(/[<>&]/g,'')+'.</h3><p>Your request is ready. This is a demo site, so nothing has been sent. On the live site this lands with Chris and Bart straight away.</p><pre id="qsum"></pre><div><button type="button" class="copy" style="font-size:.9rem;padding:.6rem 1rem">Copy request</button></div><p class="fine" style="text-align:left">Want an answer today? Call Chris on 0422 153 721 or Bart on 0404 488 456.</p></div>';
+    $('#qsum').textContent=sum;
+  });
+})();
+})();
+</script>
+
+</body></html>
